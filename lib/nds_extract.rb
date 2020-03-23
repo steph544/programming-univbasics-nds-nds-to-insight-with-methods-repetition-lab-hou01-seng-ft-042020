@@ -41,7 +41,8 @@ def total_gross(source)
     
   element_index=0
    while element_index<source[director_index][:movies].size do
-   total += source[director_index][:movies][element_index][:worldwide_gross]
+   newhash = directors_totals(source)
+   total += newhash[:name]
    element_index+=1 
   end
   director_index +=1 
