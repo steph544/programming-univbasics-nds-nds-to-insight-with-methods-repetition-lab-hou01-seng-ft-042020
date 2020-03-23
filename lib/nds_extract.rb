@@ -41,7 +41,7 @@ def total_gross(source)
     
   element_index=0
    while element_index<source[director_index][:movies].size do
-   total += directors_totals(source)[:name]
+   total += directors_totals(source)[:name][0]
    element_index+=1 
   end
   director_index +=1 
